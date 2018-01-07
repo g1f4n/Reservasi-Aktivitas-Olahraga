@@ -1,0 +1,527 @@
+/*Cascanding Style Reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+/*Akhir Cascanding Style Reset*/
+
+/* Font Style */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.woff') format('woff');     
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('bebasneue_regular-webfont.woff2') format('woff2'),
+         url('bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Akhir Font Style */
+
+/* Style Body */
+body {
+	font-size: 18px/16px;
+	font-family: "bebas_neueregular", arial, sans-serif;
+	background-color: #ECECEE;
+}
+/* Akhir Style Body */
+
+/* NavBar */
+.navbar {
+	height: 400px;
+	background-size: cover;
+	background-color: white;
+	box-shadow: 0 0 2px 3px #eaeaea;
+	background-attachment: fixed;
+}
+
+.navbar ul {
+	margin-right: 10px;
+	position: absolute; 
+	z-index: 2;
+}
+
+.navbar #right ul li {
+	margin-left: 400px;
+}
+
+.navbar ul li {
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	z-index: 2;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: #ddd;
+	font-size: inherit;
+	padding-right: 20px;
+	margin-right: 10px;
+	padding: 10px 5px 0;
+	font-size: 24px;
+	font-family: inherit;
+	z-index: 10;
+
+}
+
+.navbar .brand {
+	float: left;
+	margin-top: 10px;
+	padding-right: 30px;
+}
+
+.navbar .brand a {
+	border: none;
+	font-size: 38px;
+	font-family: inherit;
+}
+
+.navbar ul li:hover {
+	transition: .3s;
+	background-color: do;
+}
+/* Akhir NavBar */
+
+/* Fitur */
+.fitur {
+	width: 100%;
+	margin: 0 100px;
+}
+
+.fitur .fitur1, .fitur .fitur2, .fitur .fitur3 {
+	float: left;
+	display: inline-block;
+	padding: 20px;
+	margin: 0 auto;
+	color: green: ;
+	font-size: 24px;
+	width: 400px;	
+	font-family: inherit;
+}
+
+.btn {
+	font-size: 18px;
+	font-family: inherit;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid white;
+}
+
+.btn-primary {
+	background-color: green;
+	margin: 20px 80px;
+}
+
+.btn-send {
+	background-color: dodgerblue;
+}
+
+.fitur .fitur1 a, .fitur .fitur2 a, .fitur .fitur2 a, .contact a {
+	text-decoration: none;
+}
+/* Akhir Fitur */
+
+/* Content */
+.content-utama {
+	background-repeat: repeat;
+	background-color: white;
+}
+/* Akhir Content */
+
+/* Contact */
+.contact {
+	margin-top: 10px;
+	background-color: #333;
+	text-align: center;
+}
+
+.contact h4, .contact a {
+	font-size: 24px;
+	color: white;
+	padding-top: 10px;
+	font-family: inherit;
+}
+
+.contact i {
+	font-size: 24px;
+	color: white;
+	padding-top: 10px;
+}
+/* Akhir Contact */
+
+/* Footer */
+.footer {
+	height: 40px;
+	background-color: black;
+}
+
+.footer p {
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	font-family: inherit;
+}
+/* Akhir Footer */
+
+/* Style tentangkami.php & daftar.php */
+.tentangkami {
+	min-height: 500px;
+}
+.tentangkami h2, .daftar h2 {
+	font-size: 28px;
+	margin: 20px;
+	color: #aaa;
+	font-family: inherit;
+}
+
+.tentangkami hr, .daftar hr {
+	width: 400px;
+	color: #aaa;
+}
+
+.tentangkami hr {
+	margin-left: 500px;
+}
+
+.tentangami hr , .tentangkami h2, .daftar h2, .daftar hr {
+	text-align: center;
+}
+
+.tentangkami #paragraf {
+	font-size: 16px;
+	line-height: 18px;
+	margin: 10px;
+	text-align: justify;
+	text-indent: 40px;
+	font-family: inherit;
+
+}
+
+.daftar {
+	margin: 0 auto;
+	width: 400px;
+}
+
+.daftar table .inputRegis, .daftar table textarea, .daftar table select {
+	width: 150%;
+	border-radius: 5px;
+	border: 1px solid dodgerblue;
+	padding: 10px;
+}
+
+.daftar td label {
+	font-size: 24px;
+	color: #333;
+	margin-top: 10px;
+}
+
+.daftar #gambar {
+	border: none;
+}
+/* Akhir Style tentangkami.php & daftar.php */
+
+/* Style Login */
+.overlay {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 11;
+	transition: 1s;
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.8);
+}
+
+.login {
+	width: 400px;
+	height: 200px;
+	background-color: royalblue;
+	margin: 220px auto;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,.6);
+	background-size: cover;
+}
+
+.login table {
+	margin: 0 auto;
+	padding: 20px 50px 0;
+}
+
+.login h6 {
+	float: right;
+	padding-top: 15px;
+	padding-right: 20px;
+	color: white;
+}
+
+.login h4 {
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 5px;
+	color: white;
+}
+
+.close {
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+
+}
+
+.login table td input {
+	height: 25px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	width: 110%;
+	padding: 5px;
+}
+
+.login table td {
+	font-family: inherit;
+	color: white;
+}
+
+.login table .btn-send2 {
+	background-color: #333;
+	color: white;
+	padding: 5px;
+	width: 50%;
+	height: 40px;
+	cursor: pointer;
+
+}
+
+.overlay:target .login {
+	animation: zoomDanFade 1s;
+}
+/*Akhir Style Login*/
+
+/* Carausel */
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  top: 0;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Akhir Smaller Screen */
+
+/* Akhir Carausel */
+
+/*Animasi*/
+@keyframes zoomDanFade {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+/*Akhir Animasi*/
+
+/* Tampilan Index tampilinstruktur.php */
+.instruktur {
+	width: 960px;
+	margin: 20px auto;
+}
+.instruktur h2 {
+	text-align: center;
+	font-family: inherit;	
+}
+.instruktur img {
+	width: 130px;
+	height: 130px;
+	border: 3px solid grey;
+	float: left;
+	margin-left: 17%;
+
+}
+
+.instruktur2{
+	width: 200px;
+}
+
+.instruktur .instruktur2 h6 {
+	font-family: inherit;
+	font-size: 14px;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.instruktur .instruktur2 h5 {
+	font-family: inherit;
+	font-size: 24px;
+	text-align: center;
+}
+
+.instruktur .instruktur2 {
+	float: left;
+	display: inline-block;
+	margin: 10px auto;
+}
+/* Akhir Tampilan Index tampilinstruktur.php */
+
+/* Gallery */
+.containergallery img {
+	width: 120px;
+	height: 120px;
+}
+h1 	{
+	font-size: 24px;
+	margin: 20px auto;
+	text-align: center;
+	text-shadow: 1px 0 2px rgba(0,0,0,.6);
+}
+
+.containergallery {
+	width: 600px;
+	margin: auto;
+	padding: 30px;
+
+}
+
+.gallery li {
+	width: 120px;
+	height: 120px;
+	list-style: none;
+	/*overflow: hidden;*/
+	border: 5px solid #666;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+
+.gallery li span {
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200,200,200,.5);
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 120px;
+	color: #333;
+	text-shadow: 1px 1px 1px #ddd;
+	opacity: 0;
+	transform: scale(0) rotate(0);
+	transition: .3s;
+}
+
+.gallery li a:hover span {
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+
+.overlay2 {
+	position: fixed;
+	background: rgba(0,0,0,0);
+	top: 0;
+	left: 0;
+	transition: .5s;
+	z-index: 999;
+}
+
+.overlay2:target {
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.8);
+}
+/* Akhir Gallery */
+
+/*Clear Fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+/*Akhir Clear Fix

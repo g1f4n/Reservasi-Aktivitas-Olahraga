@@ -1,0 +1,377 @@
+/*Cascanding Style Reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Akhir Style Reset*/
+
+/*Font Face*/
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('bebasneue_regular-webfont.woff2') format('woff2'),
+         url('bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Akhir Font Face*/
+
+/*Style Body*/
+body {
+	font:16px/18px 'bebas_neueregular',arial, verdana, serif;
+	background-image: url(../gambar/sports/Sports.png);
+}
+
+
+/*Akhir Style Body*/
+
+/*Style topbar*/
+.topbar {
+	background-color: #0063fe;
+	box-shadow: 0 2px 3px #56a6eb;
+}
+
+/*nav {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	margin-top: -50px;	
+}*/
+/*Akhir Style topbar*/
+
+/*Style Brand*/
+.kepala {
+	margin-bottom: 50px;
+}
+.brand {
+	padding: 10px;
+}
+
+.brand a {
+	text-decoration: none;
+	color: white;
+	font-size: 28px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-shadow: 0 2px #56a6eb;
+	float: left;
+}
+/*Akhir Style Brand*/
+
+/*Style Menu*/
+
+.menu ul li {
+	display: inline-block;
+	float: right;
+	margin-top: -10px;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	padding-right: 10px;
+	color: white;
+}
+/*Akhir Style Menu*/
+
+/*Style Utama*/
+
+.sidebar {
+	width: 15%;
+	height: 100%;
+	min-height: 100%;
+	background-color: transparent;
+	margin-top: 10px;
+	border: 1px solid #56a6eb;
+	border-radius: 5px;
+	float: left;
+	font-family: verdana;
+	margin-left: 5px;
+}
+
+.sidebar img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 3px solid #0063fe;
+	margin: 10px 30px;
+	animation: rotate 1s;
+}
+
+.jk option {
+	width: 200px;
+}
+
+.sidebar h4 {
+	text-align: center;
+	font-family: verdana;
+	margin-bottom: 5px;
+	animation: rotate 1s;
+}
+
+.tabel1 .edit, .tabel2 .edit {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.sidebar hr { 
+	color: #56a6eb;
+	/*text-shadow: 0 0 3px rgba(246,221,7,.9);*/
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	font-family: inherit;
+	color: black;
+}
+
+.sidebar ul li a:hover {
+	animation: warnaHuruf 1s forwards;
+}
+
+.sidebar ul li {
+	margin: 20px 10px 0;
+	list-style: none;
+}
+
+.main {
+	min-height: 523px;
+	width: 83%;
+	float: right;
+	background-color: transparent;
+	margin-top: 10px;
+}
+
+.main h1 {
+	margin-top: 5px;
+	color: silver;
+	margin-bottom: 30px;
+}
+
+.main h3 {
+	color: silver;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main button {
+	background-color: dodgerblue;
+	box-shadow: 0 0 2px 3px white;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	margin-left: -130px;
+	cursor: pointer;
+}
+
+table {
+	border : 1px solid #56a6eb;
+	border-radius: 5px;
+}
+
+.main table th {
+	background-color: lightgrey;
+}
+
+.main table th, td {
+	/*text-align: center;*/
+	padding: 5px;
+	font-size: 14px;
+}
+
+.tabel1 {
+	margin-top: -100px;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #56a6eb;
+}
+
+.tabel1 input, .tabel1 textarea, .tabel1 select, .tabel2 input {
+	padding: 5px;
+	border: 1px solid #56a6eb;
+	border-radius: 5px;
+}
+
+#foto {
+	border: none;
+}
+
+.tabel1 .gambar {
+	/*margin-left: 60px;*/	
+}
+
+.table select, .tabel1 option {
+	width: 200%;
+}
+
+.tidakfloat {
+	float: none;
+}
+
+.tabel1 label {
+	cursor: pointer;
+}
+
+.utama img {
+	width: 120px;
+	height: 120px;
+}
+
+.container {
+	border-radius: 5px;
+	border: 1px solid #56a6eb;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+h5 {
+	font-size: 12px;
+	line-height: normal;
+}
+
+.container img {
+	width: 120px;
+	height: 120px;
+	float: left;
+	padding-right: 10px;
+}
+
+.container button {
+	float: right;
+}
+
+/*Akhir Style Utama*/
+
+/*Style Kaki*/
+.kaki {
+	height: 50px;
+	background-color: black;
+	bottom: 0;
+	margin-top: 63px;
+}
+
+.kaki p {
+	text-align: center;
+	color: white;
+	line-height: 50px;
+}
+/*Akhir Style Kaki*/
+
+/*Animasi*/
+@keyframes rotate {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes warnaHuruf {
+	0% {
+		color: black;
+		text-shadow: none;
+	}
+
+	100% {
+		color: #EF802E;
+		text-shadow: 0 0 3px rgba(246,221,7,.9);
+	}
+}
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  top: 0;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Akhir Smaller Screen */
+
+/* Akhir Carausel */
+
+
+/*Akhir Animasi*/
+
+/*Clear Fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+/*Akhir Clear Fix
